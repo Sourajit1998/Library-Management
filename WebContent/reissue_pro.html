@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<script>
+function checkForm(form)
+{
+  if(form.name.value == "") 
+  {
+    alert("Error: Name cannot be blank!");
+    form.name.focus();
+    return false;
+  }
+  
+  if(form.id.value=="")
+  {
+	  alert("Error: ID cannot be blank!");
+	    form.id.focus();
+	    return false;
+  }
+  
+  if(form.id.value!="")
+  {
+	  if(form.id.value.length !=10) 
+	  {
+	      alert("Error: Enter a valid 10 digit ID !");
+	      form.id.focus();
+	      return false;
+	  }
+	  
+  }
+
+}
+
+</script>
+<head>
+<title>Re-issue Books</title>
+<link rel="stylesheet" type="text/css" href="style1.css" >
+</head>
+<body>
+<center>
+<font color="blue" size="3">
+<h1><b>E-LIBRARY</b></h1>
+
+<div class="lib-form">
+
+<form action="reissue" name="reissue" onsubmit="return checkForm(this);">
+
+<table>
+
+<h2 align="center"><b>Re-issue Books</b></h2>
+
+<tr><td>Name</td><td><input type="text" name="name" title="Name must not be blank" id="button" placeholder="Enter your name"></td></tr>
+<tr><td>Id</td><td><input type="number" name="id" title="ID must not be blank" id="button" placeholder="Enter your id"></td></tr>
+
+</table>
+<br><br>
+
+<input type="submit" value="RE-ISSUE" id="butt">&nbsp
+<input type="reset" value="RESET" id="butt">
+<br><br><br>
+<a href="Lib_pro.html"> <i>Back</i></a>
+</form>
+</div>
+</font>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

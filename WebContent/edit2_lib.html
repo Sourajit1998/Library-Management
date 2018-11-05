@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<script>
+function checkForm(form)
+{
+  
+  if(form.cno.value=="")
+  {
+	  alert("Error: Contact no. cannot be blank!");
+	    form.cno.focus();
+	    return false;
+  }
+  
+  if(form.cno.value!="")
+  {
+	  if(form.cno.value.length !=10) 
+	  {
+	      alert("Error: Enter a valid 10 digit contact no.!");
+	      form.cno.focus();
+	      return false;
+	  }
+	  
+  }
+  
+  if(form.eid.value=="")
+  {
+	  alert("Error: Email id cannot be blank!");
+	    form.eid.focus();
+	    return false;
+  }
+
+  if(form.pass.value != "" && form.pass.value == form.repass.value) 
+  {
+    if(form.pass.value.length < 6) 
+    {
+      alert("Error: Password must contain at least six characters!");
+      form.pass.focus();
+      return false;
+    }
+    if(form.pass.value == form.name.value) 
+    {
+      alert("Error: Password must be different from Name!");
+      form.pass.focus();
+      return false;
+    }
+    re = /[0-9]/;
+    if(!re.test(form.pass.value)) 
+    {
+      alert("Error: password must contain at least one number (0-9)!");
+      form.pass.focus();
+      return false;
+    }
+    re = /[a-z]/;
+    if(!re.test(form.pass.value)) 
+    {
+      alert("Error: password must contain at least one lowercase letter (a-z)!");
+      form.pass.focus();
+      return false;
+    }
+    
+  } 
+  else 
+  {
+    alert("Error: Please check that you've entered and confirmed your password!");
+    form.pass.focus();
+    return false;
+  }
+
+}
+
+</script>
+<head>
+<title>Edit Profile </title>
+<link rel="stylesheet" type="text/css" href="style1.css" >
+</head>
+<body>
+<center>
+<font color="blue" size="3">
+<h1><b>E-LIBRARY</b></h1>
+
+<div class="lib-form">
+
+<form action="edit2" method="post" onsubmit="return checkForm(this);">
+
+<table>
+
+<h2 align="center"><b>Edit Profile</b></h2>
+
+<tr><td>Contact no.</td><td><input type="number" name="cno" title="Contact no. must be of 10 digits" id="button" placeholder="Enter the contact no."></td></tr>
+<tr><td>Email id</td><td><input type="email" name="eid" title="Email id must be a valid one" id="button" placeholder="Enter the email-id"></td></tr>
+<tr><td>Password</td><td><input type="password" name="pass" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers." id="button" placeholder="Enter the password"></td></tr>
+<tr><td>Confirm Password</td><td><input type="password" name="repass" title="Please enter the same Password as above." id="button" placeholder="Re-Enter the password"></td></tr>
+
+</table>
+<br><br>
+
+<input type="submit" value="UPDATE" id="butt">&nbsp
+<input type="reset" value="RESET" id="butt">
+<br><br><br>
+<a href="edit_lib.html"> <i>Back</i></a>
+</form>
+</div>
+</font>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

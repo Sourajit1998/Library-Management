@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<script>
+function Valid1()
+{
+     var a=document.adm.name.value;
+     var b=document.adm.pass.value;
+     if(a==""||a==null)
+     {
+    	 alert("Please enter ur name");
+         return false;
+     }
+     if(b==""||b==null)
+     {
+    	 alert("Please enter ur Password");
+         return false;
+     }
+}
+function change(x)
+{
+	if(x==1)
+    {
+	     location.href='Lib_login.html';
+	}
+	return;
+}
+</script>
+<head>
+<title>Admin Login_Page </title>
+<link rel="stylesheet" type="text/css" href="style1.css" >
+</head>
+<body>
+<center>
+<font color="blue" size="3">
+<h1><b>E-LIBRARY</b></h1>
+<p><marquee behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()">Welcome to E-Library </marquee></p>
+<div class="lib-form">
+
+<form action="adm_log" name="adm" method="post" onsubmit="return Valid1();">
+
+<table>
+<input type="radio" name="occ" value="librarian"  onclick="change(1)">Librarian &nbsp&nbsp
+<input type="radio" name="occ" value="admin" checked>Admin<br><br>
+<h2 align="center"><b>ADMIN_LOGIN</b></h2>
+<tr><td>Username</td><td><input type="text" name="name" id="button" placeholder="Enter your Username"></td></tr>
+<br>
+<tr><td>Password</td><td> <input type="password" name="pass" id="button" placeholder="Enter your Password"></td></tr>
+</table>
+<br><br>
+
+<input type="submit" value="LOGIN" id="butt">&nbsp
+<input type="reset" value="RESET" id="butt">
+
+
+</form>
+</div>
+</font>
+</center>
+</body>
+</html>
+
+
+
+

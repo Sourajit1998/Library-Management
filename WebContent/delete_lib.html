@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<script>
+function Valid1()
+{
+     var a=document.del.name.value;
+     if(a==""||a==null)
+     {
+    	 alert("Please enter ur name");
+         return false;
+     }
+     
+}
+
+</script>
+<head>
+<title>Delete Librarian</title>
+<link rel="stylesheet" type="text/css" href="style1.css" >
+</head>
+<body>
+<center>
+<font color="blue" size="3">
+<h1><b>E-LIBRARY</b></h1>
+
+<div class="lib-form">
+
+<form action="del" name="del" method="post" onsubmit="return Valid1();">
+
+<table>
+
+<h2 align="center"><b>Delete Librarian</b></h2>
+<tr><td align="center">Librarian Name</td><td><input type="text" name="name" id="button" title="Name must not be blank and contain only letters, numbers and underscores." placeholder="Enter the Librarian name"></td></tr>
+<br>
+</table>
+<br><br>
+
+<input type="submit" value="DELETE" id="butt">
+
+<br><br>
+<a href="Admin_pro.html"> <i>Back</i></a>
+
+</form>
+</div>
+</font>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<script>
+function checkForm(form)
+{
+  
+  if(form.quantity.value=="")
+  {
+	  alert("Error: Quantity cannot be blank!");
+	    form.quantity.focus();
+	    return false;
+  }
+
+}
+</script>
+<head>
+<title>Update Book's Quantity</title>
+<link rel="stylesheet" type="text/css" href="style1.css" >
+</head>
+<body>
+<center>
+<font color="blue" size="3">
+<h1><b>E-LIBRARY</b></h1>
+
+<div class="lib-form">
+
+<form action="edit2bo" method="post" onsubmit="return checkForm(this);">
+
+<table>
+
+<h2 align="center"><b>Update Book's Quantity</b></h2>
+
+<tr><td>Quantity</td><td><input type="number" name="quantity" title="Quantity must not be blank" id="button" placeholder="Enter the quantity"></td></tr>
+
+</table>
+<br><br>
+
+<input type="submit" value="UPDATE" id="butt">&nbsp
+<input type="reset" value="RESET" id="butt">
+<br><br><br>
+<a href="edit_books.html"> <i>Back</i></a>
+</form>
+</div>
+</font>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<script>
+function Valid1()
+{
+     var a=document.del.name.value;
+     var b=document.del.cat.value;
+     if(a==""||a==null)
+     {
+    	 alert("Please enter the book's name");
+         return false;
+     }
+     if(b==""||b==null)
+     {
+    	 alert("Please enter the category");
+    	 return false;
+     }
+}
+</script>
+<head>
+<title>Delete Books</title>
+<link rel="stylesheet" type="text/css" href="style1.css" >
+</head>
+<body>
+<center>
+<font color="blue" size="3">
+<h1><b>E-LIBRARY</b></h1>
+
+<div class="lib-form">
+
+<form action="delbo" name="del" method="post" onsubmit="return Valid1();">
+
+<table>
+
+<h2 align="center"><b>Removal of Books</b></h2>
+
+<tr><td>Book Name</td><td><input type="text" name="name" title="Book name must not be blank" id="button" placeholder="Enter the book's name"></td></tr>
+<tr><td>Category</td><td><input type="text" name="cat" title="Category must not be blank" id="button" placeholder="Enter the book's category"></td></tr>
+
+</table>
+<br><br>
+
+<input type="submit" value="DELETE" id="butt">&nbsp
+<input type="reset" value="RESET" id="butt">
+<br><br><br>
+<a href="Lib_pro.html"> <i>Back</i></a>
+</form>
+</div>
+</font>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

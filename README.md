@@ -1,3 +1,4 @@
+Add a provision to notify the students whenever a paticular book is back in stock
 # Library-Management
 A web based application in Java using Servlet which serves two purposes:
 1. Admin can add/view/delete librarian.

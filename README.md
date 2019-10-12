@@ -1,3 +1,4 @@
+Can add this feature-sending fine notifications to students
 # Library-Management
 A web based application in Java using Servlet which serves two purposes:
 1. Admin can add/view/delete librarian.

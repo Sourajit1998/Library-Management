@@ -1,3 +1,4 @@
+MVC design architecture can be used to reduce code redundancy!!
 # Library-Management
 A web based application in Java using Servlet which serves two purposes:
 1. Admin can add/view/delete librarian.

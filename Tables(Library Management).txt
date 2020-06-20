@@ -1,0 +1,44 @@
+1. create table Admin
+    (
+           name varchar2(20),
+	   password varchar2(15)
+     );
+
+
+
+2. create table adm_lib
+    (
+           name varchar2(20),
+	   contact varchar2(10),
+	   email varchar2(30),
+	   password varchar2(15)
+     );
+
+
+3. create table books
+   (
+          name varchar2(20),
+          category varchar2(20),
+          quantity number(10)
+   );
+
+
+4. create table issue_studs
+    (
+           name varchar2(20),
+           id varchar2(10),
+           book_name varchar2(20),
+           category varchar2(20),
+           issue_date varchar2(10),
+           due_date varchar2(10),
+	   return_date varchar2(10),
+           fine number(10)
+     );
+
+
+5. create table fine_studs
+   (
+         name varchar2(20),
+         id varchar2(10),
+         fine number(10)
+   );
